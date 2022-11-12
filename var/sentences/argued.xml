@@ -1,0 +1,25 @@
+<sentence>
+    <subject>
+        <compound>
+            <elements>
+                <proper-noun>Natalie</proper-noun>
+                <proper-noun>Martin</proper-noun>
+            </elements>
+            <conjunction>and</conjunction>
+        </compound>
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <verb>argued</verb>
+            <prepositional-phrase>
+                <preposition>about</preposition>
+                <object-of-the-preposition>
+                    <noun>weather</noun>
+                    <modifiers>
+                        <article>the</article>
+                    </modifiers>
+                </object-of-the-preposition>
+            </prepositional-phrase>
+        </verb-phrase>
+    </predicate>
+</sentence>

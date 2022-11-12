@@ -1,0 +1,27 @@
+<sentence>
+    <subject>
+        <pronoun capital="true">We</pronoun>
+    </subject>
+    <compound>
+        <predicate>
+            <verb-phrase>
+                <verb>diagrammed</verb>
+            </verb-phrase>
+            <direct-object>
+                <plural-noun>sentences</plural-noun>
+            </direct-object>
+        </predicate>\
+        <conjunction>and</conjunction>
+        <predicate>
+            <verb-phrase>
+                <verb>toasted</verb>
+            </verb-phrase>
+            <direct-object>
+                <plural-noun>participles</plural-noun>
+                <modifiers>
+                    <adjective>past</adjective>
+                </modifiers>
+            </direct-object>
+        </predicate>
+    </compound>
+</sentence>

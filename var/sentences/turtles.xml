@@ -1,0 +1,20 @@
+<sentence>
+    <subject>
+        <noun>
+            turtles
+        </noun>
+        <modifiers>
+            <article>The</article>
+        </modifiers>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <verb>travelled</verb>
+            <modifiers>
+                <adverb>enthusiastically</adverb>
+            </modifiers>
+        </verb-phrase>
+        
+    </predicate>
+</sentence>

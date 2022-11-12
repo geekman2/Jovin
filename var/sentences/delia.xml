@@ -1,0 +1,44 @@
+<sentence>
+    <subject>
+        <proper-noun>delia</proper-noun>
+        <modifiers>
+            <possessive-adjective capital="true">My</possessive-adjective>
+        </modifiers>
+        <prepositional-phrase>
+            <preposition>down</preposition>
+            <object-of-the-preposition>hall</object-of-the-preposition>
+            <modifiers>
+                <article>the</article>
+            </modifiers>
+        </prepositional-phrase>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <verb>likes</verb>
+            <prepositional-phrase>
+                <preposition>down</preposition>
+                <object-of-the-preposition>hall</object-of-the-preposition>
+                <prepositional-phrase>
+                    <preposition>of</preposition>
+                    <object-of-the-preposition>floor</object-of-the-preposition>
+                    <modifiers>
+                        <article>the</article>
+                        <adjective>thirteenth</adjective>
+                    </modifiers>
+                </prepositional-phrase>
+                <modifiers>the</modifiers>
+
+            </prepositional-phrase>
+        </verb-phrase>
+        <direct-object>
+            <noun>coffee</noun>
+            <modifiers>
+                <adjective>strong</adjective>
+                <modifiers>
+                    <adverb>really</adverb>
+                </modifiers>
+            </modifiers>
+        </direct-object>
+    </predicate>
+</sentence>

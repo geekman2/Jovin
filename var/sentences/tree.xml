@@ -1,0 +1,21 @@
+<sentence>
+    <subject>
+        <noun>
+            tree
+        </noun>
+        <modifiers>
+            <article capital="true">The</article>
+            <adjective>young</adjective>
+        </modifiers>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <verb>grew</verb>
+            <modifiers>
+                <adverb>quickly</adverb>
+            </modifiers>
+        </verb-phrase>
+        
+    </predicate>
+</sentence>

@@ -1,0 +1,18 @@
+<sentence>
+    <subject>
+        <noun>
+            rabbit
+        </noun>
+        <modifiers>
+            <modifier>My</modifier>
+        </modifiers>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <helping-verb>is</helping-verb>
+            <verb>eating</verb>
+        </verb-phrase>
+        
+    </predicate>
+</sentence>

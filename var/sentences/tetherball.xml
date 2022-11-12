@@ -1,0 +1,37 @@
+<sentence>
+    <subject>
+        <pronoun capital="true">one</pronoun>
+        <prepositional-phrase>
+            <preposition>of</preposition>
+            <object_of_the_preposition>friends</object_of_the_preposition>
+            <modifiers>
+                <adverb>her</adverb>
+                <adjective>best</adjective>
+                <prepositional-phrase>
+                    <preposition>from</preposition>
+                    <object-of-the-preposition>school</object-of-the-preposition>
+                    <modifiers>
+                        <adverb>grade</adverb>
+                    </modifiers>
+                </prepositional-phrase>
+            </modifiers>
+        </prepositional-phrase>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <verb>was</verb>
+        </verb-phrase>
+        <subject-complement>
+            <noun>champion</noun>
+            <modifiers>
+                <proper-noun>Santa Monica</proper-noun>
+                <noun>tetherball</noun>
+                <prepositional-phrase>
+                    <preposition>of</preposition>
+                    <object-of-the-preposition>1979</object-of-the-preposition>
+                </prepositional-phrase>
+            </modifiers>
+        </subject-complement>
+    </predicate>
+</sentence>

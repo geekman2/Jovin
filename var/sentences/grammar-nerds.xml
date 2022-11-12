@@ -1,0 +1,20 @@
+<sentence>
+    <subject>
+        <noun>parents</noun>
+        <modifiers>
+            <possessive-adjective capital="true">My</possessive-adjective>
+        </modifiers>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <being-verb>are</being-verb>
+        </verb-phrase>
+        <subject-compliment>
+            <noun>nerds</noun>
+            <modifiers>
+                <adjective-noun>grammar</adjective-noun>
+            </modifiers>
+        </subject-compliment>
+    </predicate>
+</sentence>

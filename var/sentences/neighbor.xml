@@ -1,0 +1,24 @@
+<sentence>
+    <subject>
+        <noun>neighbor</noun>
+        <modifiers>
+            <possessive-adjective capital="true">My</possessive-adjective>
+        </modifiers>
+        <prepositional-phrase>
+            <preposition>down</preposition>
+            <object-of-the-preposition>hall</object-of-the-preposition>
+            <modifiers>
+                <article>the</article>
+            </modifiers>
+        </prepositional-phrase>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <verb>made</verb>
+        </verb-phrase>
+        <direct-object>
+            <noun>cake</noun>
+        </direct-object>
+    </predicate>
+</sentence>

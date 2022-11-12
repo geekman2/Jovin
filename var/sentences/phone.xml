@@ -1,0 +1,24 @@
+<sentence>
+    <subject>
+        <noun>
+            phone
+        </noun>
+        <modifiers>
+            <possessive-adjective capital="true">Her</possessive-adjective>
+        </modifiers>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <verb>fell</verb>
+            <prepositional-phrase>
+                <preposition>out</preposition>
+                <object-of-the-preposition>window</object-of-the-preposition>
+                <modifiers>
+                    <article>the</article>
+                </modifiers>
+            </prepositional-phrase>
+        </verb-phrase>
+        
+    </predicate>
+</sentence>

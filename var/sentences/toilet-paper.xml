@@ -1,0 +1,17 @@
+<sentence>
+    <subject>
+        <noun>paper</noun>
+        <modifiers>
+            <adjective-noun capital="true">Toilet</adjective-noun>
+        </modifiers>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <being-verb>is</being-verb>
+        </verb-phrase>
+        <subject-compliment>
+            <adjective>helpful</adjective>
+        </subject-compliment>
+    </predicate>
+</sentence>

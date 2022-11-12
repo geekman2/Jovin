@@ -1,0 +1,29 @@
+<sentence>
+    <subject>
+        <noun>florist</noun>
+        <modifiers>
+            <article capital="true">the</article>
+            <compound-adjective>
+                <adjective>garrulous</adjective>
+                <adjective>jovial</adjective>
+                <conjunction>and</conjunction>
+            </compound-adjective>
+        </modifiers>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <verb>sings</verb>
+        </verb-phrase>
+        <prepositional-phrase>
+            <preposition>to</preposition>
+            <object-of-the-preposition>flowers</object-of-the-preposition>
+            <modifiers>
+                <pronoun>his</pronoun>
+            </modifiers>
+        </prepositional-phrase>
+        <modifiers>
+            <adverb>daily</adverb>
+        </modifiers>
+    </predicate>
+</sentence>

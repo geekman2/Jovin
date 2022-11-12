@@ -1,0 +1,27 @@
+INCOMPLETE
+<sentence>
+    <subject>
+        <proper-noun>seth</proper-noun>
+        <modifiers>
+            <possessive-adjective capital="true">My</possessive-adjective>
+        </modifiers>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <verb>had</verb>
+        </verb-phrase>
+        <direct-object>
+            <noun>nothing</noun>
+            <modifiers>
+                <adverb>more</adverb>
+                <prepositional-phrase>
+                    <preposition>to</preposition>
+                    <object-of-the-preposition>
+                        <verb>suggest</verb>
+                    </object-of-the-preposition>
+                </prepositional-phrase>
+            </modifiers>
+        </direct-object>
+    </predicate>
+</sentence>

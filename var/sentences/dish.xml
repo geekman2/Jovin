@@ -1,0 +1,27 @@
+<sentence>
+    <subject>
+        <noun>dish</noun>
+        <modifiers>
+            <article capital="true">The</article>
+        </modifiers>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <verb>ran</verb>
+            <adverb>away</adverb>
+            <prepositional-phrase>
+                <preposition>with</preposition>
+                <object-of-the-preposition>
+                    <noun>spoon</noun>
+                    <modifiers>
+                        <article>the</article>
+                    </modifiers>
+                </object-of-the-preposition>
+            </prepositional-phrase>
+        </verb-phrase>
+        <direct-object>
+            <noun>cake</noun>
+        </direct-object>
+    </predicate>
+</sentence>

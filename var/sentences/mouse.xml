@@ -1,0 +1,23 @@
+<sentence>
+    <subject>
+        <noun>
+            mouse
+        </noun>
+        <modifiers>
+            <article capital="true">The</article>
+        </modifiers>
+
+    </subject>
+    <predicate>
+        <verb-phrase>
+            <verb>greeted</verb>
+        </verb-phrase>
+        <direct-object>
+            <noun>mouse</noun>
+            <modifiers>
+                <article>the</article>
+            </modifiers>
+        </direct-object>
+        
+    </predicate>
+</sentence>
