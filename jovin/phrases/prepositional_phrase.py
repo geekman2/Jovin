@@ -14,7 +14,7 @@ class PrepositionalPhrase:
 
     @property
     def text(self):
-        if self.chaos > 0.8:
+        if self.chaos > 0.4:
             return f'{self.preposition} {self.object_of_the_preposition} {PrepositionalPhrase()}'
         else:
             return f'{self.preposition} {self.object_of_the_preposition}'

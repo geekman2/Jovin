@@ -11,33 +11,96 @@ from jovin.phrases.prepositional_phrase import PrepositionalPhrase
 from jovin.speech_parts import Conjunction
 
 class Sentence:
-    def __init__(self, seed=None) -> None:
 
+    def __init__(self, size=None) -> None:
+        self.compound = self.is_compound
+        self.phrases = [] #Phrases are ordered
+
+
+        if self.is_compound:
+            conjunction = Conjunction()
+
+            for x in range(np.random.randint(1, 3)):
+                phrase = self.generate_phrase()
+                self.phrases.append(phrase)
+            self.sentence =  f" {conjunction} ".join(str(x) for x in self.phrases)
+        else:
+            self.sentence =  self.generate_phrase()
+        
+    @property
+    def is_compound(self):
         if self.chaos > 0.5:
             compound = True
         else:
             compound = False
 
-        if compound:
-            conjunction = Conjunction()
+        return compound
 
-            clauses = []
-            for x in range(np.random.randint(1, 3)):
-                phrase = self.generate_phrase()
-                clauses.append(phrase)
-            self.text = f" {conjunction} ".join(str(x) for x in clauses)
-        else:
-            self.text = self.generate_phrase()
+    @property
+    def text(self):
+        while not self.sentence:
+            if self.is_compound:
+                self.sentence =  f" {Conjunction()} ".join(str(x) for x in self.phrases)
 
-    def generate_phrase(self):
-        if self.chaos < 0.8:
-            phrase = Clause()
-        else:
-            phrase = f'{Clause()} {PrepositionalPhrase()}'
-        return phrase
+            if not self.sentence:
+                self.sentence = str(Sentence())
+        return self.sentence
+
+    def __repr__(self) -> str:
+        return str(self)
 
     def __str__(self) -> str:
         return str(self.text)
+
+
+    def mutate(self, index=None):
+        if index is None:
+            #If no index is specified, choose a random index
+            index = np.random.randint(0, len(self.phrases))
+
+        phrase = Phrase(self.phrases[index])
+        phrase = phrase.mutate()
+        self.phrases[index] = str(phrase)
+
+        return self
+
+    def expand(self, index = None):
+        if index is None:
+            #If no index is specified, choose a random index
+            index = np.random.randint(0, len(self.phrases))
+
+        phrase = Phrase(self.phrases[index])
+        phrase = phrase.expand()
+        self.phrases[index] = str(phrase)
+        return self
+
+    def contract(self, index = None):
+        if index is None:
+            #If no index is specified, choose a random index
+            index = np.random.randint(0, len(self.phrases))
+
+        phrase = Phrase(self.phrases[index])
+        phrase = phrase.contract()
+        self.phrases[index] = str(phrase)
+        return self
+    
+
+        
+
+    def generate_phrase(self):
+        if self.chaos < 0.2:
+            phrase = str(Clause())
+        else:
+            phrase = f'{Clause()} {PrepositionalPhrase()}'
+
+        if self.chaos > 0.6:
+            new_phrase = Phrase()
+            if new_phrase:
+                phrase = f'{new_phrase}, {phrase}'
+
+        return phrase
+
+    
 
     @property
     def chaos(self):
@@ -52,85 +115,17 @@ class Paragraph:
 
             return self
 
-    def __init__(self) -> None:
+    def __init__(self, low=10, high=30) -> None:
         self.sentences = []
-        number_of_sentences_in_paragraph = np.random.randint(1, 7)
+        number_of_sentences_in_paragraph = np.random.randint(low, high)
         for i in range(number_of_sentences_in_paragraph):
             self.sentences.append(Sentence())
 
     def __str__(self):
-        return '. '.join(str(x) for x in self.sentences)
+        return '. '.join(str(x) for x in self.sentences )
 
 
     @property    
     def chaos(self):
         return np.random.random()
 
-if __name__ == "__main__":
-    # Generate the subject of a sentence
-    subject = Subject()
-    print("Just a subject:", subject)
-
-    #Check that Gerunds function correctly
-    gerund = Gerund()
-    print("A verb that has been nouned:", gerund)
-
-    # Generate a predicate
-    predicate = Predicate()
-    print("Just a predicate:", predicate)
-
-    #Generate a bare phrase
-    phrase = Phrase()
-    print("A phrase that isn't a sentence at all:", phrase)
-
-    #Generate a prepositional phrase
-    prepositional_phrase = PrepositionalPhrase()
-    print("Busy Prepositions", prepositional_phrase)
-
-    # Generate a sentence manually
-    print("Technically a sentence:", subject, predicate)
-
-    # Generate a clause
-    print("A clause, as in, a sentence:", Clause())
-
-    # Create a new sentence
-    print("A sentence:", Sentence())
-
-    #Generate a paragraph
-    print(Paragraph())
-
-    #Write new output
-    with open('tmp/jovin-output.txt', 'w') as f:
-        f.write(Paragraph()*30)
-
-    # Select the first sentence structure
-
-    # Select the second sentence structure
-
-    # Splice sentences by taking the subject from one and the predicate from another
-
-    # Add a subject complement to a sentence that does not have one
-
-    # Add a subject complement to a sentence that does already have one
-
-    # Add a fragment to the beginning of the sentence
-
-    # Add a prepositional phrase to the subject
-
-    # Add a prepositional phrase to the predicate
-
-    # Add a prepositional phrase to another prepositional phrase
-
-    # Make the subject compound
-
-    # Make the subject a pronoun
-
-    # Add an adjective modifier to the subject
-
-    # Add a compound adjective to the subject
-
-    # Add an article to the subject
-
-    # Convert a sentence structure into a sentence
-
-    # Fill in the word

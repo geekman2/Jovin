@@ -70,14 +70,15 @@ class Preposition(SandHammerWord):
 
 
 class Verb(SandHammerWord):
-    filepath = "var/wordlists/verbs"
-    filename = "verbs.txt"
+    filepath = "var/wordlists"
+    filename = "popular.txt"
 
     def __init__(self, wordlist=None) -> None:
         super().__init__(wordlist, self.filename, self.filepath)
 
 
 class HelpingVerb(Verb):
+    filepath = 'var/wordlists/verbs'
     filename = "verbs-helping.txt"
 
     def __init__(self, wordlist=None) -> None:
@@ -86,6 +87,7 @@ class HelpingVerb(Verb):
 
 class BeingVerb(Verb):
     filename = "verbs-being.txt"
+    filepath = 'var/wordlists/verbs'
 
     def __init__(self, wordlist=None) -> None:
         super().__init__(wordlist)

@@ -37,7 +37,6 @@ down
 during
 except
 for
-forenenst
 from
 given
 in
@@ -45,7 +44,6 @@ inside
 into
 lest
 like
-modulo
 near
 next
 notwithstanding

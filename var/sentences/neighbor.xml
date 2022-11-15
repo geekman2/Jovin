@@ -1,9 +1,11 @@
 <sentence>
     <subject>
-        <noun>neighbor</noun>
-        <modifiers>
-            <possessive-adjective capital="true">My</possessive-adjective>
-        </modifiers>
+        <subject-phrase>
+            <noun>neighbor</noun>
+            <modifiers>
+                <possessive-adjective capital="true">My</possessive-adjective>
+            </modifiers>
+        </subject-phrase>
         <prepositional-phrase>
             <preposition>down</preposition>
             <object-of-the-preposition>hall</object-of-the-preposition>
