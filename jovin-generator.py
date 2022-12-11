@@ -6,6 +6,9 @@ from jovin.speech_parts import Gerund
 from jovin.phrases.phrase import Phrase
 from jovin.jovin import Sentence
 from jovin.jovin import Paragraph
+from jovin.speech_parts import Name, Verb, ProperNoun, HelpingVerb
+    
+
 
 if __name__ == "__main__":
     # Generate the subject of a sentence
@@ -38,13 +41,40 @@ if __name__ == "__main__":
     print("A sentence:", Sentence())
 
     #Generate a paragraph
-    print(Paragraph())
+    #print(Paragraph())
 
     #Write new output
     with open('tmp/jovin-output.txt', 'w') as f:
         to_write = Paragraph()*5
-        print(to_write)
+        #print(to_write)
         f.write(to_write)
+
+    print("Wrote", len(to_write), "bytes")
+
+    #Answer a "Why" question
+    answer_to_why_question = f"Because {Name()} {Verb()}ed' {PrepositionalPhrase()} in {ProperNoun()}"
+    while len(answer_to_why_question) > 60:
+        answer_to_why_question = f"Because {Name()} {Verb()}ed {PrepositionalPhrase()} in {ProperNoun()}"
+    print(answer_to_why_question)
+    print(len(answer_to_why_question))
+
+    #Answer "Who is Elijah"
+    answer_to_why_question = f"A {Phrase()} {PrepositionalPhrase()}"
+    while len(answer_to_why_question) > 60:
+        answer_to_why_question = f"A {Phrase()} {PrepositionalPhrase()}"
+    print(answer_to_why_question)
+    print(len(answer_to_why_question))
+
+    #Answer "What is the candle map incident"
+    answer_to_why_question = f"That time {Name()} {HelpingVerb()} {Verb()} {PrepositionalPhrase()}"
+    while len(answer_to_why_question) > 60:
+        answer_to_why_question = f"That time {Name()} {HelpingVerb()} {Verb()} {PrepositionalPhrase()}"
+    print(answer_to_why_question)
+    print(len(answer_to_why_question))
+
+    #Answer "When did the incident happen"
+
+    #Where did "The Candle Map Incident" happen?
 
     # Select the first sentence structure
 

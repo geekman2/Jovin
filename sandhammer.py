@@ -3,6 +3,8 @@ import random
 
 
 class SandHammerWord:
+    filename = None
+    
     def __init__(self, wordlist=None, filename=None, filepath="var/wordlists/") -> None:
         if filename:
             self.filename = filename
@@ -10,17 +12,18 @@ class SandHammerWord:
         if wordlist:
             self.wordlist = wordlist
 
-        self.load_wordlist()
+        if self.filename:
+            self.load_wordlist()
+            
 
     def load_wordlist(self):
-        if self.filename:
-            # Load file from disk
-            filepath = os.path.join(self.filepath, self.filename)
-            with open(filepath) as f:
-                wordlist = f.read()
+        # Load file from disk
+        filepath = os.path.join(self.filepath, self.filename)
+        with open(filepath) as f:
+            wordlist = f.read()
 
-            # Split into a list object
-            self.wordlist = wordlist.split("\n")
+        # Split into a list object
+        self.wordlist = wordlist.split("\n")
 
     def __str__(self) -> str:
         return self.generate_word()
